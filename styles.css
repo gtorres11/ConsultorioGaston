@@ -1,0 +1,195 @@
+.navbar, a {
+    color: white;
+}
+
+.navbar {
+    border: rgb(233, 153, 32) solid 2px;
+}
+
+a:hover {
+    color: rgb(233, 153, 32);;
+    
+}
+
+
+.navbar {
+    position: static;
+    
+  }
+
+.container .direccion {
+    align-self: center;
+}
+
+
+#logofont {
+    font-family: 'David Libre', serif;
+}
+
+
+.navbar .nav-item .nav-link {
+    color: rgb(233, 153, 32);
+  }
+
+.nav-toggler-icon {
+      color: rgb(233, 153, 32) ;
+}
+
+header {
+    position: relative;
+    background-size: cover;
+}
+.main-header {
+    min-height: 500px;
+  }
+
+
+footer {
+    position: static;
+  }
+
+.navbar ul li a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+
+.section-two {
+    background: url(img/fondobanner.jpg);
+    height: 500px;
+    width: 100%;
+}
+
+.section-one {
+    background-image: url(img/fondobanner.jpg);
+    height: auto;
+    width: 100%;
+}
+
+#ubicacion{
+    background-image: url(img/fondobanner.jpg);
+}
+.fas {
+    color: rgb(233, 153, 32);
+    border: 2px solid rgb(233, 153, 32)ite;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+    background:rgb(233, 153, 32);;
+}
+
+#siglas {
+    font-size: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+li.nav-item {
+    font-size: 20px;    
+    align-self: baseline;
+}
+
+
+.section {
+    display: flex;
+
+}
+
+#redes {
+    display: block;
+
+}
+
+
+i {
+    color: black;
+}
+
+.parallax-princ {
+    background: url(/img/salud.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.carousel-item {
+    max-height: 600px;
+    background-size: cover;
+}
+
+
+
+.carousel-caption{
+    color: black;
+}
+
+.carousel .slide .carousel-fade{
+    background-size: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.fa-linkedin {
+    font-size: 50px;
+    background-color: #007bb5;
+    color:white;
+    padding: 20px;
+    width: 80px;
+    border-radius: 20%;
+}
+
+.fa-facebook-f {
+    font-size: 50px;
+    background-color: #3B5998;
+    color:white;
+    padding: 20px;
+    width: 80px;
+    border-radius: 20%;
+}
+
+.fa-twitter {
+    font-size: 50px;
+    background-color: #55ACEE;
+    color:white;
+    padding: 20px;
+    width: 80px;
+    border-radius: 20%;
+}
+
+@media screen and (max-width: 766px) {
+    iframe {
+        width: 98%;
+    }
+    .nav-item {
+        font-size: 20px;
+    }
+    #siglas {
+        font-size: 60px;
+    }
+}
+
+.icon {
+    font-size: 60px;
+}
+@media screen and (max-width: 545px) {
+    iframe {
+        width: 98%;
+    }
+    .nav-item {
+        font-size: 20px;
+    }
+    #siglas {
+        font-size: 20px;
+    }
+    #logosm {
+        width: 40%;
+    }
+}
