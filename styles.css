@@ -2,20 +2,28 @@
     color: white;
 }
 
-.navbar {
-    border: rgb(233, 153, 32) solid 2px;
+a.navbar-brand{
+    max-width: 200px;
+
 }
 
-a:hover {
-    color: rgb(233, 153, 32);;
-    
-}
+
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
 
 
 .navbar {
     position: static;
+    background-color: rgba(32, 153, 233, 0.9);
     
   }
+
 
 .container .direccion {
     align-self: center;
@@ -28,11 +36,11 @@ a:hover {
 
 
 .navbar .nav-item .nav-link {
-    color: rgb(233, 153, 32);
+    color: white;
   }
 
 .nav-toggler-icon {
-      color: rgb(233, 153, 32) ;
+      color:white ;
 }
 
 header {
@@ -40,7 +48,7 @@ header {
     background-size: cover;
 }
 .main-header {
-    min-height: 500px;
+    min-height: auto;
   }
 
 
@@ -48,14 +56,7 @@ footer {
     position: static;
   }
 
-.navbar ul li a:after {
-    content: "";
-    display: block;
-    margin: auto;
-    height: 2px;
-    width: 0px;
-    transition: all .8s;
-}
+
 
 .section-two {
     background: url(img/fondobanner.jpg);
@@ -70,7 +71,7 @@ footer {
 }
 
 #ubicacion{
-    background-image: url(img/fondobanner.jpg);
+    background: white;
 }
 .fas {
     color: rgb(233, 153, 32);
@@ -79,10 +80,7 @@ footer {
     padding: 10px;
 }
 
-.navbar ul li a:hover:after {
-    width: 100%;
-    background:rgb(233, 153, 32);;
-}
+
 
 #siglas {
     font-size: 80px;
@@ -132,37 +130,71 @@ i {
 }
 
 .carousel .slide .carousel-fade{
-    background-size: inherit;
+
     width: 100%;
     height: 100%;
 }
 
 .fa-linkedin {
     font-size: 50px;
-    background-color: #007bb5;
-    color:white;
-    padding: 20px;
-    width: 80px;
-    border-radius: 20%;
+    color: white;
+
+
 }
 
-.fa-facebook-f {
+.fa-facebook {
     font-size: 50px;
-    background-color: #3B5998;
     color:white;
-    padding: 20px;
-    width: 80px;
-    border-radius: 20%;
+
 }
 
 .fa-twitter {
     font-size: 50px;
-    background-color: #55ACEE;
-    color:white;
-    padding: 20px;
-    width: 80px;
-    border-radius: 20%;
+    color: white;
 }
+
+.fa-instagram {
+    font-size: 50px;
+    color:white;
+}
+
+
+
+#ub-tablas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+}
+
+@media screen and (max-width: 1270px) {
+
+    iframe {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    
+    iframe {
+        width: 100%;
+    }
+
+}    
+
+@media screen and (max-width: 850px) {
+    
+    #ub-tablas {
+        display: block;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+    }
+    
+    iframe {
+        width: 80%;
+    }
+
+} 
 
 @media screen and (max-width: 766px) {
     iframe {
@@ -174,11 +206,48 @@ i {
     #siglas {
         font-size: 60px;
     }
+    .fa-linkedin {
+        font-size: 50px;
+        color:white;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border-radius: 20%;
+    }
+    
+    .fa-facebook-f {
+        font-size: 50px;
+        color:white;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border-radius: 20%;
+    }
+    
+    .fa-twitter {
+        font-size: 50px;
+        color:white;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border-radius: 20%;
+    }
+    .fa-twitter {
+        font-size: 50px;
+        color:white;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border-radius: 20%;
+    }
+
+
+    .icon {
+        font-size: 60px;
+    }
+
 }
 
-.icon {
-    font-size: 60px;
-}
 @media screen and (max-width: 545px) {
     iframe {
         width: 98%;
