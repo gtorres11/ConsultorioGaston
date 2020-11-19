@@ -1,28 +1,84 @@
-.navbar, a {
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    color: grey;
+    z-index: 100;
+    box-shadow:0 10px 5px #888888;
+  }
+
+  .option {
+      border: 2px solid rgba(32, 153, 233, 0.8);
+      width: 80%;
+      padding: 20px 0;
+      background:rgba(32, 153, 233, 0.5);
+  }
+
+  .option a{
     color: white;
+   
+}
+
+
+
+
+.esp {
+  position: relative;
+  background: url(/img/medicina3.jpg);
+  background-size: cover;
+}
+
+.background-overlay {  
+  background: rgba(32, 153, 233, .6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.esp h2{
+    padding-top: 100px;
+}
+
+.fa-bars {
+    border-radius: 25px;
+    padding:20px;
+    color: rgba(32, 153, 233, 0.9);
 }
 
 a.navbar-brand{
     max-width: 200px;
+    
+}
 
+#contact {
+    background-color: grey;
+    justify-content: space-between ;
+}
+
+
+
+.nav-item .nav-link:hover {
+    border-bottom: 2px solid rgba(123, 172, 57, 0.9);
+    color: rgba(32, 153, 233, 0.9);
+    
+  }
+
+.dropdown-item:hover {
+    color: rgba(102, 151, 38, 0.9);;
+}
+
+.dropdown-menu a{
+    font-size:14px;
 }
 
 
 
 
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
-
-
-
-.navbar {
-    position: static;
-    background-color: rgba(32, 153, 233, 0.9);
-    
-  }
 
 
 .container .direccion {
@@ -31,13 +87,11 @@ a.navbar-brand{
 
 
 #logofont {
-    font-family: 'David Libre', serif;
+    font-family: 'Encode Sans', sans-serif;
 }
 
 
-.navbar .nav-item .nav-link {
-    color: white;
-  }
+
 
 .nav-toggler-icon {
       color:white ;
@@ -51,10 +105,6 @@ header {
     min-height: auto;
   }
 
-
-footer {
-    position: static;
-  }
 
 
 
@@ -70,21 +120,15 @@ footer {
     width: 100%;
 }
 
-#ubicacion{
-    background: white;
-}
-.fas {
-    color: rgb(233, 153, 32);
-    border: 2px solid rgb(233, 153, 32)ite;
-    border-radius: 25px;
-    padding: 10px;
-}
+
+
+
 
 
 
 #siglas {
     font-size: 80px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
 }
 
 li.nav-item {
@@ -98,10 +142,7 @@ li.nav-item {
 
 }
 
-#redes {
-    display: block;
 
-}
 
 
 i {
@@ -117,22 +158,57 @@ i {
     object-fit: cover;
 
 }
-
-.carousel-item {
-    max-height: 600px;
-    background-size: cover;
+.fas {
+    color: rgb(123,172,57);
+    border-radius: 25px;
+    padding: 10px;
 }
 
-
-
-.carousel-caption{
-    color: black;
+.fa-user-md {
+    background-color:transparent;
+    border-radius: 2000px;
+    padding: 40px;
+    font-size: 50px;
+    border: 1px solid #0078FF; ;
 }
 
-.carousel .slide .carousel-fade{
+.fa-vials {
+    background-color:transparent;
+    border-radius: 2000px;
+    padding: 40px;
+    font-size: 50px;
+    border: 1px solid #0078FF ;
+}
 
-    width: 100%;
-    height: 100%;
+.fa-ambulance {
+    background-color:transparent;
+    border-radius: 2000px;
+    padding: 40px;
+    font-size: 50px;
+    border: 1px solid #0078FF ;
+}
+
+.fa-phone-volume {
+    background-color:transparent;
+    border-radius: 2000px;
+    padding: 40px;
+    font-size: 50px;
+    border: 1px solid #0078FF ;
+}
+
+.fa-x-ray {
+    background-color:transparent;
+    border-radius: 2000px;
+    padding: 40px;
+    font-size: 50px;
+    border: 1px solid #0078FF ;
+}
+.fa-dna {
+    background-color:transparent;
+    border-radius: 2000px;
+    padding: 40px;
+    font-size: 50px;
+    border: 1px solid #0078FF ;
 }
 
 .fa-linkedin {
@@ -142,6 +218,10 @@ i {
 
 }
 
+.btn {
+    background-color: rgb(123,172,57);
+    color: white;
+}
 .fa-facebook {
     font-size: 50px;
     color:white;
@@ -158,19 +238,173 @@ i {
     color:white;
 }
 
+.fa-facebook-messenger {
+    font-size: 50px;
+    color:white;
+}
 
 
 #ub-tablas {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     text-align: center;
+    
 }
+
+#datafiscal {
+        width: 20%;
+        padding-top: 20px;
+        text-align: center;
+        display:block;
+        margin:auto;
+}
+
+#pdp {
+    width: 20%;
+        padding-top: 40px;
+        text-align: center;
+        display:block;
+        margin:auto;
+}
+
+.infofooter {
+    color: white;
+    padding-top: 40px;
+    padding-left: 20px;
+    
+
+  }
+
+  .infofooter li {
+  list-style: none;
+  }
+
+  .legal {
+      text-align: center;
+      color:white;
+  }
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 25px; /* Establecemos la barra en la izquierda */
+	top: 400px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+    font-size: 50px;
+    
+    
+}
+ 
+	.social ul {
+        list-style: none;
+        
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 15px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+        transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+        font-size: 30px;
+        border-radius: 100%;
+        
+	}
+ 
+	.social ul li .fa-facebook-square {background:#0078FF;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .fa-twitter {background: #00abf0;}
+    .social ul li .fa-facebook-messenger {background: #0078FF;}
+    .social ul li .fa-instagram {background:#0078FF;}
+	.social ul li .fa-linkedin {background: #0077b5;}
+	.social ul li .fa-whatsapp {background: #0078FF;}
+ 
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 20px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    }
+    
+
+    #integral {
+        margin-top: 80px;
+       
+    }
+    #integral img {
+        display: block;
+        margin: auto;
+        
+    }
+
+    #lab {
+        margin-bottom: 80px;
+       
+    }
+
+    #lab p {
+        padding: 0px 20px;
+        margin: 10px 40px;
+    }
+
+    #lab h4 {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        
+        margin: 20px 40px;
+        color: rgba(123, 172, 57, 0.9)
+    }
+    #lab h5 {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin: 20px 40px;
+        
+        color: black
+    }
+
+    #lab ul {
+        margin: 20px 40px;
+    }
+
+    #lab ul li a{
+        margin: 20px 40px;
+    }
+    #lab ul li{
+        margin: 10px 40px;
+    }
+
+    #lab h1 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+        color: rgb(69, 183, 228);
+    }
+    
+    #datosform {
+        align-self: center;
+        justify-content: center;
+    }
+    
+    #espec {
+        display:grid;
+      
+    }
 
 @media screen and (max-width: 1270px) {
 
     iframe {
         width: 90%;
     }
+    .parallax-princ {
+        background: url(/img/salud.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+        width: 100%;
+
+    
+    }
+   
 }
 
 @media screen and (max-width: 1100px) {
@@ -179,7 +413,16 @@ i {
     iframe {
         width: 100%;
     }
+    .parallax-princ {
+        background: url(/img/salud.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+        width: 100%;
 
+    
+    }
+   
 }    
 
 @media screen and (max-width: 850px) {
@@ -193,7 +436,21 @@ i {
     iframe {
         width: 80%;
     }
+    .parallax-princ {
+        background: url(/img/salud.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+        width: 100%;
 
+    }
+    #logoform {
+        margin-top: 20px;
+        
+     }
+     .social ul li a {
+        font-size: 30px;
+	}
 } 
 
 @media screen and (max-width: 766px) {
@@ -245,7 +502,24 @@ i {
     .icon {
         font-size: 60px;
     }
+    .parallax-princ {
+        background: url(/img/salud.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: auto;
+        width: 100%;
 
+    
+    }
+    #logoform {
+        content: url(#);
+        margin-top: 20px;
+        
+     }
+
+     .social ul li a {
+        font-size: 30px;
+	}
 }
 
 @media screen and (max-width: 545px) {
@@ -261,4 +535,19 @@ i {
     #logosm {
         width: 40%;
     }
+
+    .parallax-princ {
+        background: url(/img/salud.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: auto;
+        width: 100%;
+
+    
+    }
+    #logoform {
+        content: url(#);
+        margin-top: 20px;
+        
+     }
 }
